@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Add Event</title>
+    <link rel="stylesheet" href="addevent.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Event Management System</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Manage Sponsors</a></li>
+                <li><a href="#">Events</a></li>
+                <ul>
+                    <li><a href="#">Add</a></li>
+                    <li><a href="#">Manage</a></li>
+                </ul>
+                <li><a href="#">Manage Users</a></li>
+                <li><a href="#">Manage Subscribers</a></li>
+                <li><a href="#">Manage Bookings</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Website Setting</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <header class="header">
+                <h1>Admin Dashboard</h1>
+            </header>
+            
+            <section class="add-event">
+                <h2>Add Event</h2>
+                <form id="addEventForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <select id="category" name="category" required>
+                            <option value="">Select</option>
+                            <!-- Add more options here -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sponsor">Event Sponsors:</label>
+                        <select id="sponsor" name="sponsor" required>
+                            <option value="">Select</option>
+                            <!-- Add more options here -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventName">Event Name:</label>
+                        <input type="text" id="eventName" name="eventName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Event Description:</label>
+                        <textarea id="description" name="description" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="startDate">Event Start Date:</label>
+                        <input type="date" id="startDate" name="startDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="endDate">Event End Date:</label>
+                        <input type="date" id="endDate" name="endDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Event Location:</label>
+                        <input type="text" id="location" name="location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Event Featured Image:</label>
+                        <input type="file" id="image" name="image" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Add Event</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="addevent.js"></script>
+</body>
+</html>
